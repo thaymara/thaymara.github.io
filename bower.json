@@ -1,0 +1,23 @@
+{
+  "name": "thaymara.github.io",
+  "description": "Personal Portfolio",
+  "main": "",
+  "authors": [
+    "Thaysa Santos"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "angular": "^1.6.4",
+    "angular-ui-router": "^0.4.2"
+  }
+}
