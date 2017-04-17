@@ -8,22 +8,22 @@ angular.module('portfolioApp', ['ui.router'])
                 url:'/',
                 views: {
                     'header': {
-                        templateUrl : 'views/header.html'
+                        templateUrl : '../views/header.html'
                     },
                     'projects': {
-                        templateUrl : 'views/home.html'
+                        templateUrl : '../views/home.html'
                         //controller : 'HomeController'
                     },
                     'about': {
-                        templateUrl : 'views/home.html'
+                        templateUrl : '../views/home.html'
                         //controller : 'HomeController'
                     },
                     'contact': {
-                        templateUrl : 'views/home.html'
+                        templateUrl : '../views/home.html'
                         //controller : 'HomeController'
                     },
                     'footer': {
-                        templateUrl : 'views/footer.html',
+                        templateUrl : '../views/footer.html',
                         controller: 'FooterController'
                     }
                 }
