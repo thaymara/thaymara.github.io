@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="portfolioApp">
 
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- The above 3 meta tags *must* come first in the head; any other head 
          content must come *after* these tags -->
     
-    <title>Thaysa Santos</title>    
+    <title>Thaysa Santos - Front end developer</title>    
     
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css"/>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -21,13 +22,13 @@
 </head>
 
 <body>
-    <!--<div ui-view="header"></div>
-    <div ui-view="content"></div>
-    <div ui-view="footer"></div>-->
-    <h1>Hello there!</h1>
-    <button class="btn btn-default" type="submit">Button</button>
-    
-<script src="js/main.js"></script>
+    <div ui-view="header"></div>
+    <div ui-view="projects"></div>
+    <div ui-view="about"></div>
+    <div ui-view="contact"></div>
+    <div ui-view="footer"></div>
+
+    <script src="js/main.js"></script>
 
 </body>
 
