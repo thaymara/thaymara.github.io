@@ -1,0 +1,30 @@
+body{
+    background: $light-grey;
+    color: $dark-grey;
+    font-size: 1.2rem;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+footer {
+    flex: 1 0 auto;
+  }
+
+a{
+    color: $dark-grey;
+
+    &:hover{
+        color:$red;
+    }
+
+    &:visited{
+        color: $dark-grey;
+    }
+}
+
+p{
+    padding: 5px 0;
+    margin: 0;
+
+}

@@ -1,0 +1,67 @@
+body {
+  background: #EFEFEF;
+  color: #545454;
+  font-size: 1.2rem;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+footer {
+  flex: 1 0 auto; }
+
+a {
+  color: #545454; }
+  a:hover {
+    color: #f04242; }
+  a:visited {
+    color: #545454; }
+
+p {
+  padding: 5px 0;
+  margin: 0; }
+
+.content {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px; }
+  .content .title {
+    width: 100%;
+    font-weight: 700;
+    text-align: center;
+    font-size: 2.7rem;
+    color: #A9A9A9;
+    border-bottom: 2px solid #b0aac2;
+    line-height: 0.1em; }
+    .content .title span {
+      background: #EFEFEF;
+      padding: 0 10px; }
+
+nav .nav-wrapper {
+  background: #c2d4d8;
+  padding: 0 15px;
+  color: #EFEFEF; }
+
+nav, nav a, nav ul a, span.badge.new {
+  font-weight: 500;
+  color: #ffffff !important; }
+
+.page-footer {
+  background: #c2d4d8; }
+  .page-footer .container {
+    font-weight: 400; }
+  .page-footer .fa-heart {
+    color: #f04242; }
+
+.contact {
+  text-align: center;
+  margin: 15px 0; }
+  .contact .email a {
+    font-weight: 700;
+    font-size: 1.3rem; }
+  .contact .social {
+    font-size: 1.5rem;
+    margin: 25px 0; }
+    .contact .social a {
+      margin: 0 15px; }

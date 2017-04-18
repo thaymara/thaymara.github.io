@@ -1,0 +1,12 @@
+//Import variable sass
+@import "components/variables";
+
+//Import components css files
+@import "components/global";
+@import "components/content";
+@import "components/button";
+@import "components/nav";
+@import "components/footer";
+
+//Import section css files
+@import "section/contact.scss"

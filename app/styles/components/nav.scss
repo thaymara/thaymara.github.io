@@ -1,0 +1,10 @@
+nav .nav-wrapper{
+    background: $blue;
+    padding: 0 15px;
+    color: $light-grey;
+}
+
+nav, nav a, nav ul a, span.badge.new{
+    font-weight: 500;
+    color: $white !important;
+}

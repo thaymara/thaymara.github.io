@@ -1,0 +1,22 @@
+.content{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+
+    .title{
+        width: 100%; 
+        font-weight: 700;
+        text-align: center;
+        font-size: 2.7rem;
+        color: $grey;
+        border-bottom: 2px solid $purple;
+        line-height: 0.1em;
+
+        span { 
+            background: $light-grey;
+            padding:0 10px; 
+        }
+    }
+}

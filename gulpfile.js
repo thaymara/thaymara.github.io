@@ -7,12 +7,8 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     usemin = require('gulp-usemin'),
     imagemin = require('gulp-imagemin'),
-    rename = require('gulp-rename'),
-    concat = require('gulp-concat'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
-    changed = require('gulp-changed'),
-    rev = require('gulp-rev'),
     browserSync = require('browser-sync'),
     del = require('del'),
     ngannotate = require('gulp-ng-annotate');
@@ -31,7 +27,7 @@ gulp.task('clean', function() {
 
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('usemin', 'imagemin', 'sass', 'copyfonts');
+    gulp.start('usemin', 'imagemin', 'copyfonts', 'sass');
 });
 
 gulp.task('usemin',['jshint'], function () {
@@ -51,10 +47,17 @@ gulp.task('imagemin', function() {
     .pipe(notify({ message: 'Images task complete' }));
 });
 
-gulp.task('sass', function(){
-  return gulp.src('app/styles/**/*.scss')
+gulp.task('sass', function(){ 
+  return gulp.src('app/styles/*.scss')
     .pipe(sass()) // Converts Sass to CSS with gulp-sass
-    .pipe(gulp.dest('dist/css'));
+    .pipe(gulp.dest('dist/styles')); 
+});
+
+gulp.task('inject-css', ['sass'], function(){
+  var injectFiles = gulp.src(['dist/styles/global.css'])
+  return gulp.src('./app/index.html')
+    .pipe(inject(injectFiles))
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task('copyfonts', ['clean'], function() {

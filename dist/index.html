@@ -10,8 +10,11 @@
     
     <title>Thaysa Santos - Front end developer</title>    
     
-    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css"/>
+
+    <!-- others css -->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="styles/app.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -23,9 +26,12 @@
 
 <body>
     <div ui-view="header"></div>
-    <div ui-view="projects"></div>
-    <div ui-view="about"></div>
-    <div ui-view="contact"></div>
+    <div class="content">
+        <div ui-view="home"></div>
+        <div ui-view="projects"></div>
+        <div ui-view="about"></div>
+        <div ui-view="contact"></div>
+    </div>
     <div ui-view="footer"></div>
 
     <script src="js/main.js"></script>

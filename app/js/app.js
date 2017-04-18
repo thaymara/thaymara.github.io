@@ -1,5 +1,4 @@
 'use strict';
-//angular.module('portfolioApp', [])
 angular.module('portfolioApp', ['ui.router'])
     .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         $stateProvider
@@ -8,21 +7,31 @@ angular.module('portfolioApp', ['ui.router'])
                 url:'/',
                 views: {
                     'header': {
+                        //templateUrl : 'views/header.html'
                         templateUrl : './dist/views/header.html'
                     },
-                    'projects': {
+                    'home':{
+                        //templateUrl : 'views/home.html'
                         templateUrl : './dist/views/home.html'
+                        //controller : 'HomeController'
+                    },
+                    'projects': {
+                        //templateUrl : 'views/projects.html'
+                        templateUrl : './dist/views/projects.html'
                         //controller : 'HomeController'
                     },
                     'about': {
-                        templateUrl : './dist/views/home.html'
+                        //templateUrl : 'views/about.html'
+                        templateUrl : './dist/views/about.html'
                         //controller : 'HomeController'
                     },
                     'contact': {
-                        templateUrl : './dist/views/home.html'
+                        //templateUrl : 'views/contact.html'
+                        templateUrl : './dist/views/contact.html'
                         //controller : 'HomeController'
                     },
                     'footer': {
+                        //templateUrl : 'views/footer.html',
                         templateUrl : './dist/views/footer.html',
                         controller: 'FooterController'
                     }
