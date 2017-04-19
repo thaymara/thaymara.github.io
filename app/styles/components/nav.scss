@@ -1,5 +1,5 @@
 nav .nav-wrapper{
-    background: $blue;
+    background: $light-purple;
     padding: 0 15px;
     color: $light-grey;
 }
@@ -8,3 +8,14 @@ nav, nav a, nav ul a, span.badge.new{
     font-weight: 500;
     color: $white !important;
 }
+
+.side-nav li > a{
+    color: $dark-grey !important;
+}
+
+ @media only screen and(max-width: 768px){
+    nav .brand-logo i{
+        float: none;
+        margin-left: 15px;
+    }
+ }

@@ -15,6 +15,8 @@ a {
     color: #f04242; }
   a:visited {
     color: #545454; }
+  a:active {
+    color: #f04242; }
 
 p {
   padding: 5px 0;
@@ -37,9 +39,16 @@ p {
     .content .title span {
       background: #EFEFEF;
       padding: 0 10px; }
+  @media only screen and (max-width: 1280px) {
+    .content {
+      width: auto;
+      margin-left: 0;
+      margin-right: 0; }
+      .content .title {
+        font-size: 1.7rem; } }
 
 nav .nav-wrapper {
-  background: #c2d4d8;
+  background: #D1C4E9;
   padding: 0 15px;
   color: #EFEFEF; }
 
@@ -47,12 +56,23 @@ nav, nav a, nav ul a, span.badge.new {
   font-weight: 500;
   color: #ffffff !important; }
 
+.side-nav li > a {
+  color: #545454 !important; }
+
+@media only screen and (max-width: 768px) {
+  nav .brand-logo i {
+    float: none;
+    margin-left: 15px; } }
+
 .page-footer {
-  background: #c2d4d8; }
+  background: #D1C4E9; }
   .page-footer .container {
     font-weight: 400; }
   .page-footer .fa-heart {
     color: #f04242; }
+  @media only screen and (max-width: 768px) {
+    .page-footer .text-lighten-4 {
+      float: left !important; } }
 
 .contact {
   text-align: center;
@@ -65,3 +85,5 @@ nav, nav a, nav ul a, span.badge.new {
     margin: 25px 0; }
     .contact .social a {
       margin: 0 15px; }
+      .contact .social a:hover {
+        color: #f04242 !important; }

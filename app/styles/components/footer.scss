@@ -1,5 +1,5 @@
 .page-footer{
-    background: $blue;
+    background: $light-purple;
     
     .container{
         font-weight: 400;
@@ -7,5 +7,11 @@
 
     .fa-heart{
         color: $red;
+    }
+
+    @media only screen and(max-width: 768px){
+        .text-lighten-4{
+            float: left !important;
+        }
     }
 }

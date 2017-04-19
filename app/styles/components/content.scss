@@ -19,4 +19,14 @@
             padding:0 10px; 
         }
     }
+
+    @media only screen and(max-width: 1280px){
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;
+
+        .title{
+           font-size: 1.7rem;
+        }
+    }
 }

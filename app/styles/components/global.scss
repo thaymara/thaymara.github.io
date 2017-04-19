@@ -21,6 +21,10 @@ a{
     &:visited{
         color: $dark-grey;
     }
+
+    &:active{
+        color:$red;
+    }
 }
 
 p{

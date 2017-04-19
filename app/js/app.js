@@ -7,8 +7,9 @@ angular.module('portfolioApp', ['ui.router'])
                 url:'/',
                 views: {
                     'header': {
-                        //templateUrl : 'views/header.html'
-                        templateUrl : './dist/views/header.html'
+                        //templateUrl : 'views/header.html',
+                        templateUrl : './dist/views/header.html',
+                        controller: 'HeaderController'
                     },
                     'home':{
                         //templateUrl : 'views/home.html'
