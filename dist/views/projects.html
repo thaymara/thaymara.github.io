@@ -8,8 +8,8 @@
           <div class="card medium hoverable hand-cursor"
             ng-click="gotoRepo(project.html_url)">
             <div class="card-image">
-                <img src="img/html-code.jpg" ng-if="project.language !== 'Java'">
-                <img src="img/android.jpg" ng-if="project.language == 'Java'">
+                <img src="dist/img/html-code.jpg" ng-if="project.language !== 'Java'">
+                <img src="dist/img/android.jpg" ng-if="project.language == 'Java'">
                 <!--ng-if="project.language == 'Java'"></i>-->
               <span class="card-title">{{ project.name }}</span>
             </div>
