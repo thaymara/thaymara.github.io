@@ -1,3 +1,9 @@
 .btn{
+    &:hover{
+        color: $white !important;
+    }
+    &:visited{
+        color: $white !important;
+    }
     
 }

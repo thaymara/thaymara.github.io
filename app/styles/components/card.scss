@@ -1,0 +1,16 @@
+.card {
+    .card-image .card-title{
+        text-shadow: 1px 1px 5px $black;
+    }
+    .card-content p{
+        font-size: 14px;
+    }
+
+    .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating){
+        color: $deep-purple-3;
+
+        &:hover{
+            color: $deep-purple-4;
+        }
+    }
+}

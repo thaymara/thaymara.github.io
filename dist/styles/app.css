@@ -22,6 +22,9 @@ p {
   padding: 5px 0;
   margin: 0; }
 
+.hand-cursor {
+  cursor: pointer !important; }
+
 .content {
   padding-left: 15px;
   padding-right: 15px;
@@ -46,6 +49,12 @@ p {
       margin-right: 0; }
       .content .title {
         font-size: 1.7rem; } }
+
+.btn:hover {
+  color: #ffffff !important; }
+
+.btn:visited {
+  color: #ffffff !important; }
 
 nav .nav-wrapper {
   background: #D1C4E9;
@@ -74,6 +83,17 @@ nav, nav a, nav ul a, span.badge.new {
     .page-footer .text-lighten-4 {
       float: left !important; } }
 
+.card .card-image .card-title {
+  text-shadow: 1px 1px 5px #000000; }
+
+.card .card-content p {
+  font-size: 14px; }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #b39ddb; }
+  .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #d1c4e9; }
+
 .contact {
   text-align: center;
   margin: 15px 0; }
@@ -87,3 +107,6 @@ nav, nav a, nav ul a, span.badge.new {
       margin: 0 15px; }
       .contact .social a:hover {
         color: #f04242 !important; }
+
+.project {
+  margin: 10px 0; }

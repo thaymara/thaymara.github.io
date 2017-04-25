@@ -17,9 +17,9 @@ angular.module('portfolioApp', ['ui.router'])
                         //controller : 'HomeController'
                     },
                     'projects': {
-                        //templateUrl : 'views/projects.html'
-                        templateUrl : './dist/views/projects.html'
-                        //controller : 'HomeController'
+                        //templateUrl : 'views/projects.html',
+                        templateUrl : './dist/views/projects.html',
+                        controller : 'ProjectsController'
                     },
                     'about': {
                         //templateUrl : 'views/about.html'
