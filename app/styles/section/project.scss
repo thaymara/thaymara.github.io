@@ -1,3 +1,11 @@
 .project{
-    margin: 10px 0;
+    margin: 10px 0 50px 0
+}
+
+.project-link{
+    color: $red !important;
+
+    &:hover{
+        color: $red;
+    }
 }

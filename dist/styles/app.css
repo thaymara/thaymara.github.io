@@ -109,4 +109,34 @@ nav, nav a, nav ul a, span.badge.new {
         color: #f04242 !important; }
 
 .project {
-  margin: 10px 0; }
+  margin: 10px 0 50px 0; }
+
+.project-link {
+  color: #f04242 !important; }
+  .project-link:hover {
+    color: #f04242; }
+
+.about-picture {
+  float: right;
+  height: 250px;
+  width: 250px; }
+  .about-picture img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%; }
+
+.knowledge {
+  margin-top: 20px;
+  margin-bottom: 50px; }
+  .knowledge .certificate-title {
+    padding: 0; }
+  .knowledge .local {
+    font-style: italic;
+    color: #A9A9A9;
+    padding: 0; }
+
+.angular-input-stars {
+  margin-top: 0; }
+
+.angular-input-stars > li .active {
+  color: #9575CD; }

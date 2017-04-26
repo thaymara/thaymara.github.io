@@ -14,22 +14,39 @@ angular.module('portfolioApp')
     .controller('ProjectsController', ['$scope', 'projectsService', function($scope, projectsService){
         $scope.projectsLists = {};
         $scope.showProjects = true;
-        $scope.message = "";
+        $scope.message = true;
         
         projectsService.getRepositories()
             .then(
                 function(response){
-                    console.log(response.data);
-                        $scope.projectsLists = response.data;
-                        $scope.projectsLists = $scope.projectsLists.slice(0,6);
-                        $scope.showProjects = true;
-                    },
-                    function(response) {
-                        $scope.message = "Error: "+response.status + " " + response.statusText;
-                    }
+                    $scope.message = false;
+                    $scope.projectsLists = response.data;
+                    $scope.projectsLists = $scope.projectsLists.slice(0,6);
+                    $scope.showProjects = true;
+                },
+                function(response) {
+                    $scope.message = true;
+                }
             );
+        
         $scope.gotoRepo = function(link){
             window.open(link, "_blank");
         }
+    }])
+
+    .controller('AboutController', ['$scope', 'skillsService', function($scope, skillsService){
+        $scope.skillsList = [];
+        $scope.methodologieList = [];
+        $scope.certificationList = [];
+        
+        skillsService.getSkills()
+            .then(
+                function(response){
+                    var resp = response.data;
+                    $scope.skillsList = resp.skills;
+                    $scope.methodologieList = resp.methodologies;
+                    $scope.certificationList = resp.certificates;
+                }
+            )
     }])
 ;

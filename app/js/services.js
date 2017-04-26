@@ -8,4 +8,12 @@ angular.module('portfolioApp')
         return $http.get(repoURL);
     }
 }])
+
+.service('skillsService', ['$http', function($http){
+    var skillURL = "../data/skills.json";
+
+    this.getSkills = function(){
+        return $http.get(skillURL);
+    }
+}])
 ;

@@ -1,5 +1,5 @@
 'use strict';
-angular.module('portfolioApp', ['ui.router'])
+angular.module('portfolioApp', ['ui.router', 'angular-input-stars'])
     .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         $stateProvider
                     // route for the home page
@@ -22,9 +22,9 @@ angular.module('portfolioApp', ['ui.router'])
                         controller : 'ProjectsController'
                     },
                     'about': {
-                        //templateUrl : 'views/about.html'
-                        templateUrl : './dist/views/about.html'
-                        //controller : 'HomeController'
+                        //templateUrl : 'views/about.html',
+                        templateUrl : './dist/views/about.html',
+                        controller : 'AboutController'
                     },
                     'contact': {
                         //templateUrl : 'views/contact.html'

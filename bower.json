@@ -17,6 +17,7 @@
     "font-awesome": "^4.7.0",
     "angular": "1.6.4",
     "angular-ui-router": "^0.4.2",
-    "materialize": "^0.98.2"
+    "materialize": "^0.98.2",
+    "angular-input-stars-directive": "angular-input-stars#^1.7.1"
   }
 }

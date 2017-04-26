@@ -1,15 +1,65 @@
 <div class="about">
     <h1 class="title"><span>Olá!</span></h1>
-    <p>Em Construção :)</p>
+    <div class="about-picture">
+        <img src="img/doodle.jpg" alt="profile"/>
+    </div>
+    <p>Sou uma desenvolvedora de sistemas, websites e web designer que adora livros, tecnologia e animais.</p>
+    <p>Trabalhei algum tempo como web developer fazendo a estruturação de sites e customização de CSS de temas para wordpress e por um breve período trabalhei com a criação de layouts e impressos.</p>
+    <p>Por três meses trabalhei com o desenvolvimento de sistemas web em C# .NET utilizando a plataforma Telerik e como banco de dados era utilizado o banco de dados da Microsoft SQL Server.</p>
+    <p>Atualmente voltei a atuar na área web como front-end developer com foco em desenvolvimento web usando HTML, CSS, JavaScript, jQuery, Bootstrap e Angular. Também tive experiência com o desenvolvimento mobile híbrido usando a plataforma IBM MobileFirst, HTML, CSS, SASS, JavaScript, AngularJs, Cordova e Ionic e com o desenvolvimento mobile híbrido usando Ionic 2 e Angular 2.</p>
+
+    <div class="knowledge" ng-controller="AboutController">
+        <div class="row">
+            <div class="col s12 m3 l3">
+                <h4>Habilidades e Competências</h4>
+            </div>
+            <div class="col s12 m8 l8">
+                <div class="row">
+                    <div class="col" ng-repeat="skill in skillsList.data">
+                        <p>{{ skill.language }}</p>
+                        <input-stars 
+                            icon-full="fa-circle" icon-empty="fa-circle-thin"
+                            max="5" 
+                            ng-model="skill.rate"
+                            readonly>
+                        </input-stars>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m8 l8">
+                <div class="row">
+                    <div class="col" ng-repeat="meth in methodologieList.data">
+                        <p>{{ meth.name }}</p>
+                        <input-stars 
+                            icon-full="fa-circle" icon-empty="fa-circle-thin"
+                            max="5" 
+                            ng-model="meth.rate"
+                            readonly>
+                        </input-stars>
+                    </div>
+                </div>
+            </div>
+            <div class="col s12 m3 l3">
+                <h4>Metodologias</h4>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col s12 m3 l3">
+                <h4>Certificações</h4>
+            </div>
+            <div class="col s12 m8 l8">
+                <div class="row">
+                    <div class="col" ng-repeat="certificate in certificationList.data">
+                        <p class="certificate-title">{{ certificate.name }}</p>
+                        <p class="local">{{ certificate.local }}</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
 </div>
-<!-- 
-    Tenho 22 anos sou uma desenvolvedora de sistemas, websites e web designer que adora livros, tecnologia e animais.
-
-Trabalhei algum tempo como web developer fazendo a estruturação de sites e customização de CSS de temas para wordpress e por um breve período trabalhei com a criação de layouts e impressos.
-
-Por três meses trabalhei com o desenvolvimento de sistemas web em C# .NET utilizando a plataforma Telerik e como banco de dados era utilizado o banco de dados da Microsoft SQL Server.
-
-Atualmente voltei a atuar na área web onde trabalho com o front-end dos websites.
-
-Possuo os seguintes conhecimentos: Java, JavaScript, jQuery, HTML5, CSS3, Android, AngularJS, Bootstrap, C#, ASP.NET, SQL e nas seguintes ferramentas: Adobe Photoshop, Visual Studio, Eclipse e Android Studio.
--->

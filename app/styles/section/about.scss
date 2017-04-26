@@ -1,0 +1,33 @@
+.about-picture{
+    float: right;
+    height: 250px;
+    width: 250px;
+
+    img{
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+    }
+}
+
+.knowledge{
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    .certificate-title{
+        padding: 0;
+    }
+    .local{
+        font-style: italic;
+        color: $grey;
+        padding: 0;
+    }
+}
+
+// Overwrite angular input stars css
+.angular-input-stars{
+    margin-top: 0;
+}
+.angular-input-stars > li .active{
+    color: $deep-purple;
+}
