@@ -1,9 +1,9 @@
-.content{
-    padding-left: 15px;
+.container{
+    /*padding-left: 15px;
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    width: 1200px;
+    width: 1200px;*/
 
     .title{
         width: 100%; 
@@ -21,9 +21,9 @@
     }
 
     @media only screen and(max-width: 1280px){
-        width: auto;
+       /* width: auto;
         margin-left: 0;
-        margin-right: 0;
+        margin-right: 0;*/
 
         .title{
            font-size: 1.7rem;

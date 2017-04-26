@@ -12,7 +12,7 @@
                 <img src="dist/img/html-code.jpg" ng-if="project.language !== 'Java'">
                 <img src="dist/img/android.jpg" ng-if="project.language == 'Java'">
                 <!--ng-if="project.language == 'Java'"></i>-->
-              <span class="card-title">{{ project.name }}</span>
+              <span class="card-title truncate">{{ project.name }}</span>
             </div>
             <div class="card-content">
               <p>{{project.description}}</p>

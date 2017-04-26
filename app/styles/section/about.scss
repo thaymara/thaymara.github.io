@@ -1,3 +1,7 @@
+.intro{
+    padding-left: .75rem;
+}
+
 .about-picture{
     float: right;
     height: 250px;
@@ -24,10 +28,9 @@
     }
 }
 
-// Overwrite angular input stars css
-.angular-input-stars{
-    margin-top: 0;
-}
-.angular-input-stars > li .active{
-    color: $deep-purple;
+@media only screen and (max-width: 768px){
+    .about-picture{
+        height: 150px;
+        width: 150px;
+    }
 }

@@ -1,0 +1,7 @@
+// Overwrite angular input stars css
+.angular-input-stars{
+    margin-top: 0;
+}
+.angular-input-stars > li .active{
+    color: $deep-purple;
+}

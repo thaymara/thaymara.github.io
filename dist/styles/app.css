@@ -25,13 +25,13 @@ p {
 .hand-cursor {
   cursor: pointer !important; }
 
-.content {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 1200px; }
-  .content .title {
+.container {
+  /*padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;*/ }
+  .container .title {
     width: 100%;
     font-weight: 700;
     text-align: center;
@@ -39,15 +39,15 @@ p {
     color: #A9A9A9;
     border-bottom: 2px solid #b0aac2;
     line-height: 0.1em; }
-    .content .title span {
+    .container .title span {
       background: #EFEFEF;
       padding: 0 10px; }
   @media only screen and (max-width: 1280px) {
-    .content {
-      width: auto;
-      margin-left: 0;
-      margin-right: 0; }
-      .content .title {
+    .container {
+      /* width: auto;
+        margin-left: 0;
+        margin-right: 0;*/ }
+      .container .title {
         font-size: 1.7rem; } }
 
 .btn:hover {
@@ -94,6 +94,12 @@ nav, nav a, nav ul a, span.badge.new {
   .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
     color: #d1c4e9; }
 
+.angular-input-stars {
+  margin-top: 0; }
+
+.angular-input-stars > li .active {
+  color: #9575CD; }
+
 .contact {
   text-align: center;
   margin: 15px 0; }
@@ -116,6 +122,9 @@ nav, nav a, nav ul a, span.badge.new {
   .project-link:hover {
     color: #f04242; }
 
+.intro {
+  padding-left: .75rem; }
+
 .about-picture {
   float: right;
   height: 250px;
@@ -135,8 +144,7 @@ nav, nav a, nav ul a, span.badge.new {
     color: #A9A9A9;
     padding: 0; }
 
-.angular-input-stars {
-  margin-top: 0; }
-
-.angular-input-stars > li .active {
-  color: #9575CD; }
+@media only screen and (max-width: 768px) {
+  .about-picture {
+    height: 150px;
+    width: 150px; } }
