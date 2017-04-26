@@ -10,7 +10,8 @@ angular.module('portfolioApp')
 }])
 
 .service('skillsService', ['$http', function($http){
-    var skillURL = "../data/skills.json";
+    //var skillURL = "../data/skills.json";
+    var skillURL = "dist/data/skills.json";
 
     this.getSkills = function(){
         return $http.get(skillURL);
