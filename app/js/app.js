@@ -1,5 +1,5 @@
 'use strict';
-angular.module('portfolioApp', ['ui.router', 'angular-input-stars'])
+angular.module('portfolioApp', ['ui.router', 'angular-input-stars', 'ngScrollSpy'])
     .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
         $stateProvider
                     // route for the home page
@@ -7,7 +7,7 @@ angular.module('portfolioApp', ['ui.router', 'angular-input-stars'])
                 url:'/',
                 views: {
                     'header': {
-                        //templateUrl : 'views/header.html',
+                       // templateUrl : 'views/header.html',
                         templateUrl : './dist/views/header.html',
                         controller: 'HeaderController'
                     },
@@ -32,7 +32,7 @@ angular.module('portfolioApp', ['ui.router', 'angular-input-stars'])
                         //controller : 'HomeController'
                     },
                     'footer': {
-                        //templateUrl : 'views/footer.html',
+                       // templateUrl : 'views/footer.html',
                         templateUrl : './dist/views/footer.html',
                         controller: 'FooterController'
                     }

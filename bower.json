@@ -21,7 +21,5 @@
     "angular-input-stars-directive": "angular-input-stars#^1.7.1",
     "ng-ScrollSpy.js": "^3.2.2"
   },
-  "devDependencies": {
-    
-  }
+  "devDependencies": {}
 }
