@@ -10,7 +10,8 @@ footer {
   flex: 1 0 auto; }
 
 a {
-  color: #545454; }
+  color: #545454;
+  cursor: pointer; }
   a:hover {
     color: #f04242; }
   a:visited {

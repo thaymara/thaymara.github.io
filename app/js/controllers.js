@@ -2,8 +2,8 @@
 angular.module('portfolioApp')
     
     .controller('HeaderController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
-        var jq = $.noConflict();
-        jq(".button-collapse").sideNav({
+        //var jq = $.noConflict();
+        jQuery(".button-collapse").sideNav({
             closeOnClick: true,
             draggable: true
         });
@@ -14,15 +14,15 @@ angular.module('portfolioApp')
             } else {
                 $anchorScroll();
             }
+
             setTimeout(function(){
-                window.scroll({
+                window.scrollTo({
                     left: window.pageXOffset, 
-                    top: window.pageYOffset - offset,
-                    behavior: 'smooth'});
+                    top: window.pageYOffset - offset});
+                    //behavior: 'smooth'});
             },50);
         }
     }])
-
     
     .controller('FooterController', ['$scope', function($scope){
         $scope.currentYear = new Date();
