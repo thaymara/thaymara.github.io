@@ -4,11 +4,14 @@
 //Import components css files
 @import "components/global";
 @import "components/content";
-@import "components/button";
-@import "components/nav";
 @import "components/footer";
 @import "components/card";
-@import "components/angular-input-stars";
+@import "components/loader";
+
+//Import trumps css files
+@import "trumps/nav";
+@import "trumps/button";
+@import "trumps/angular-input-stars";
 
 //Import section css files
 @import "section/contact";

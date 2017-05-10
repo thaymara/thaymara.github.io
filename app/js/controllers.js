@@ -1,8 +1,8 @@
 'use strict';
 angular.module('portfolioApp')
-    .run(['$anchorScroll', function($anchorScroll) {
-        $anchorScroll.yOffset = 100;   // always scroll by 50 extra pixels
-    }])
+    // .run(['$anchorScroll', function($anchorScroll) {
+    //     $anchorScroll.yOffset = 100;   // always scroll by 50 extra pixels
+    // }])
     
     .controller('HeaderController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
         var jq = $.noConflict();
@@ -12,16 +12,18 @@ angular.module('portfolioApp')
         });
         //jq(".button-collapse").s
 
-        $scope.gotoSection = function(hashSection){
-           // $anchorScroll.yOffset = 70; 
+        $scope.gotoSection = function(hashSection, offset){
             if ($location.hash() !== hashSection) {
                 $location.hash(hashSection);
             } else {
-                //$anchorScroll.yOffset = 100;
                 $anchorScroll();
             }
-           // $location.hash(hashSection);
-           // console.log($anchorScroll.yOffset);
+            setTimeout(function(){
+                window.scrollTo({
+                    left: window.pageXOffset, 
+                    top: window.pageYOffset - offset,
+                    behavior: 'smooth'});
+            },50);
         }
     }])
 
@@ -33,18 +35,21 @@ angular.module('portfolioApp')
     .controller('ProjectsController', ['$scope', 'projectsService', function($scope, projectsService){
         $scope.projectsLists = {};
         $scope.showProjects = true;
-        $scope.message = true;
+        $scope.message = false;
+        $scope.loading = true;
         
         projectsService.getRepositories()
             .then(
                 function(response){
                     $scope.message = false;
+                    $scope.loading = false;
                     $scope.projectsLists = response.data;
                     $scope.projectsLists = $scope.projectsLists.slice(0,6);
                     $scope.showProjects = true;
                 },
-                function(response) {
+                function(error) {
                     $scope.message = true;
+                    $scope.loading = false;
                 }
             );
         

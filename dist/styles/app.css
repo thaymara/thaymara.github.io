@@ -25,6 +25,12 @@ p {
 .hand-cursor {
   cursor: pointer !important; }
 
+a.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden; }
+
 .container {
   /*padding-left: 15px;
     padding-right: 15px;
@@ -50,11 +56,41 @@ p {
       .container .title {
         font-size: 1.7rem; } }
 
-.btn:hover {
-  color: #ffffff !important; }
+.page-footer {
+  background: #D1C4E9; }
+  .page-footer .container {
+    font-weight: 400; }
+  .page-footer .fa-heart {
+    color: #f04242; }
+  @media only screen and (max-width: 768px) {
+    .page-footer .text-lighten-4 {
+      float: left !important; } }
 
-.btn:visited {
-  color: #ffffff !important; }
+.card .card-image .card-title {
+  text-shadow: 1px 1px 5px #000000; }
+
+.card .card-content p {
+  font-size: 14px; }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #b39ddb; }
+  .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    color: #D1C4E9; }
+
+.loader {
+  border: 10px solid #D1C4E9;
+  border-top: 10px solid #9575CD;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+  animation: spin 2s linear infinite; }
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
 
 nav .nav-wrapper {
   background: #D1C4E9;
@@ -76,26 +112,11 @@ nav, nav a, nav ul a, span.badge.new {
     float: none;
     margin-left: 15px; } }
 
-.page-footer {
-  background: #D1C4E9; }
-  .page-footer .container {
-    font-weight: 400; }
-  .page-footer .fa-heart {
-    color: #f04242; }
-  @media only screen and (max-width: 768px) {
-    .page-footer .text-lighten-4 {
-      float: left !important; } }
+.btn:hover {
+  color: #ffffff !important; }
 
-.card .card-image .card-title {
-  text-shadow: 1px 1px 5px #000000; }
-
-.card .card-content p {
-  font-size: 14px; }
-
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
-  color: #b39ddb; }
-  .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
-    color: #d1c4e9; }
+.btn:visited {
+  color: #ffffff !important; }
 
 .angular-input-stars {
   margin-top: 0; }

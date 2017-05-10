@@ -2,8 +2,9 @@
     <h1 class="title">
       <span>O que eu ando fazendo</span>
     </h1>
+    <div class="loader" ng-if="loading"></div>
     <!--<p>Últimos projetos em que venho trabalhando.</p>-->
-    <div class="row" ng-if="!message">
+    <div class="row" ng-if="!message" ng-if="!loading">
         <div class="col s12 m4 l4" 
           ng-repeat="project in projectsLists">
           <div class="card medium hoverable hand-cursor"
@@ -26,14 +27,14 @@
           </div>
         </div>
       </div>
-      <div class="center-align" ng-if="!message">
+      <div class="center-align" ng-if="!message && !loading">
         <a class="waves-effect waves-light deep-purple lighten-3 btn btn-link"
           href="https://github.com/thaymara?tab=repositories" target="_blank">
           <i class="fa fa-plus" aria-hidden="true"></i> 
           códigos
         </a>
       </div>
-      <div class="error" ng-if="message">
+      <div class="error" ng-if="message && !loading">
         <h1>Oops!</h1>
         <p>Alguma coisa errada aconteceu :(</p>
         <p>Mas você ainda pode visualizar meu portfólio completo pelo do <a href="https://github.com/thaymara" target="_blank" class="project-link">github</a>!</p>
