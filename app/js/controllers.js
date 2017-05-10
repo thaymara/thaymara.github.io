@@ -1,9 +1,28 @@
 'use strict';
 angular.module('portfolioApp')
-
-    .controller('HeaderController', ['$scope', function($scope){
+    .run(['$anchorScroll', function($anchorScroll) {
+       // $anchorScroll.yOffset = 100;   // always scroll by 50 extra pixels
+    }])
+    
+    .controller('HeaderController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
         var jq = $.noConflict();
-        jq(".button-collapse").sideNav();
+        jq(".button-collapse").sideNav({
+            closeOnClick: true,
+            draggable: true
+        });
+        //jq(".button-collapse").s
+
+        $scope.gotoSection = function(hashSection){
+           // $anchorScroll.yOffset = 70; 
+            if ($location.hash() !== hashSection) {
+                $location.hash(hashSection);
+            } else {
+                $anchorScroll.yOffset = 100;
+                $anchorScroll();
+            }
+           // $location.hash(hashSection);
+            console.log($anchorScroll.yOffset);
+        }
     }])
 
     

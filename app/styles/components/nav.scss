@@ -13,6 +13,10 @@ nav, nav a, nav ul a, span.badge.new{
     color: $dark-grey !important;
 }
 
+#sidenav-overlay{
+    z-index: 1 !important;
+}
+
  @media only screen and(max-width: 768px){
     nav .brand-logo i{
         float: none;

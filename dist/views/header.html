@@ -4,15 +4,15 @@
       <a href="#!" class="brand-logo"><i class="fa fa-code" aria-hidden="true"></i>Thaysa Santos</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li data-scrollspy-listen="projects"><a ng-click="gotoSection('projects')">Projetos</a></li>
+        <li data-scrollspy-listen="about"><a ng-click="gotoSection('about')">Sobre</a></li>
+        <li data-scrollspy-listen="contact"><a ng-click="gotoSection('contact')">Contato</a></li>
         <!--<li><a href="#">English?</a></li></li>-->
       </ul>
       <ul class="side-nav" id="mobile-demo">
-        <li><a href="#">Projetos</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Contato</a></li>
+        <li data-scrollspy-listen="projects"><a ng-click="gotoSection('projects')">Projetos</a></li>
+        <li data-scrollspy-listen="about"><a ng-click="gotoSection('about')">Sobre</a></li>
+        <li data-scrollspy-listen="contact"><a ng-click="gotoSection('contact')">Contato</a></li>
       </ul>
     </div>
   </nav>
