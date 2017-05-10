@@ -10,17 +10,20 @@ angular.module('portfolioApp')
 
         $scope.gotoSection = function(hashSection, offset){
             if ($location.hash() !== hashSection) {
-                $location.hash(hashSection);
+                jQuery('html, body').animate({
+                    scrollTop: jQuery("#" + hashSection).offset().top - offset
+                }, 800, function(){
+                    $location.hash(hashSection);
+                });
+                
             } else {
-                $anchorScroll();
+                jQuery('html, body').animate({
+                    scrollTop: jQuery("#" + hashSection).offset().top
+                }, 800, function(){
+                    $anchorScroll();
+                });
+                
             }
-
-            setTimeout(function(){
-                window.scrollTo({
-                    left: window.pageXOffset, 
-                    top: window.pageYOffset - offset});
-                    //behavior: 'smooth'});
-            },50);
         }
     }])
     

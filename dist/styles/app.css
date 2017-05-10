@@ -147,9 +147,6 @@ nav, nav a, nav ul a, span.badge.new {
   .project-link:hover {
     color: #f04242; }
 
-.intro {
-  padding-left: .75rem; }
-
 .about-picture {
   float: right;
   height: 250px;
