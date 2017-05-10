@@ -1,8 +1,5 @@
 'use strict';
 angular.module('portfolioApp')
-    // .run(['$anchorScroll', function($anchorScroll) {
-    //     $anchorScroll.yOffset = 100;   // always scroll by 50 extra pixels
-    // }])
     
     .controller('HeaderController', ['$scope', '$location', '$anchorScroll', function($scope, $location, $anchorScroll){
         var jq = $.noConflict();
@@ -10,7 +7,6 @@ angular.module('portfolioApp')
             closeOnClick: true,
             draggable: true
         });
-        //jq(".button-collapse").s
 
         $scope.gotoSection = function(hashSection, offset){
             if ($location.hash() !== hashSection) {
@@ -19,7 +15,7 @@ angular.module('portfolioApp')
                 $anchorScroll();
             }
             setTimeout(function(){
-                window.scrollTo({
+                window.scroll({
                     left: window.pageXOffset, 
                     top: window.pageYOffset - offset,
                     behavior: 'smooth'});
