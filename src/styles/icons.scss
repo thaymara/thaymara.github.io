@@ -1,0 +1,6 @@
+@import './variables.scss';
+
+@mixin icons ($color, $font){
+    color: $color;
+    font-size: $font;
+}

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+nav{
+    background: $main-color;
+    
+    ul a{
+        font-size: 1.2rem;
+    }
+
+    .brand-logo{
+        font-size: 1.9rem;
+    }
+
+    i{
+        font-size: 3rem;
+    }
+}

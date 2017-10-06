@@ -1,0 +1,38 @@
+@import '../../../styles/variables.scss';
+@import '../../../styles/icons.scss';
+@import '../../../styles/title.scss';
+
+.about-page{
+    background-color: $light-grey;
+    color: $dark-grey;
+    .profile-img{
+        border: 10px solid $main-color;
+        height: 215px;
+        margin-top: 30px;
+        transform: rotate(-347deg);
+    }
+
+    .fa-heart{
+        @include icons($red, 1.1rem);
+    }
+
+    .icon{
+        @include icons($main-color, 3rem);
+    }
+
+    .about-content{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .habilities-content{
+        padding-top: 20px;
+        margin-bottom: 0 !important;
+    }
+
+    @media screen and (max-width: 768px){
+        .profile-img{
+            height: 150px;
+        }
+    }
+}

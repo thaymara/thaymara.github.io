@@ -1,0 +1,14 @@
+@import '../../styles/variables.scss';
+@import '../../styles/icons.scss';
+
+.page-footer{
+    background: $main-color;
+    
+    .container{
+        font-weight: 400;
+    }
+
+    .fa-heart{
+        @include icons($red, 1.1rem);
+    }
+}

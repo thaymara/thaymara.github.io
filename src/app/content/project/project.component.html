@@ -1,0 +1,54 @@
+<div class="project-page">
+    <h4 class="center title">
+      <span>Meus trabalhos</span>
+    </h4>
+    <div class="container project-content">
+        <div class="center"  *ngIf="loading">
+          <div class="preloader-wrapper active">
+              <div class="spinner-layer">
+                <div class="circle-clipper left">
+                  <div class="circle"></div>
+                </div><div class="gap-patch">
+                  <div class="circle"></div>
+                </div><div class="circle-clipper right">
+                  <div class="circle"></div>
+                </div>
+              </div>
+          </div>
+        </div>
+      <div class="row" *ngIf="!loading && !error">
+          <div class="col s12 m4" 
+              *ngFor="let project of projectsList">
+              <div class="card medium hoverable">
+                <div class="card-image">
+                  <img class="responsive-img" 
+                    src="../../assets/images/doodle.jpg">
+                  <span class="card-title truncate">{{ project.name }}</span>
+                </div>
+                <div class="card-content">
+                  <p>{{ project.description }}</p>
+                </div>
+                <div class="card-action">
+                    <a href="{{ project.html_url }}" target="_blank">
+                      <i class="material-icons right">insert_link</i>
+                      CODE
+                    </a>
+                  </div>
+              </div>
+          </div>
+          <div class="center">
+              <a 
+                class="waves-effect waves-light btn more-button">
+                <i class="material-icons right">arrow_forward</i>Veja Mais
+              </a>
+          </div>
+      </div>
+
+      <div class="error" *ngIf="error && !loading">
+        <h1>Oops! <i class="material-icons medium">sentiment_very_dissatisfied</i></h1>
+        <p>Alguma coisa errada aconteceu</p>
+        <p>Mas você ainda pode visualizar meu portfólio completo pelo <a href="https://github.com/thaymara" target="_blank">github</a>!</p>
+      </div>
+
+  </div>
+</div>

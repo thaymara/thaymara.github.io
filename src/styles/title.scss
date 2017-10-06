@@ -1,0 +1,11 @@
+.title{
+    width: 100%;
+    font-weight: 700;
+    border-bottom: 2px solid $main-color;
+    line-height: 0.1em; 
+    
+    span {
+      background: $light-grey;
+      padding: 0 10px; 
+    }
+}

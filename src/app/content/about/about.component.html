@@ -1,0 +1,29 @@
+<div class="about-page">
+  <div class="container">
+      <div class="row about-content">
+        <div class="col s12 m4 l4 center">
+            <img class="responsive-img profile-img" src="../assets/images/profile.jpg">
+        </div>
+
+        <div class="col s12 m8 l8">
+          <div class="description text-flow">
+            <p>Tudo começou em 2009 quando comecei a brincar com o HTML e CSS de blogs e desde então eu me apaixonei pela área de front-end e procurei me especializar.</p>
+            <p>Hoje sou graduada em Análise e Desenvolvimento de Sistemas e trabalho com aquilo que gosto: desenvolver a interface de websites! <i class="material-icons fa-heart">favorite</i></p>
+            <p>Eu amo os animais e amo ler! Adoro estar por dentro das novidades na área e por isso procuro sempre estar participando de eventos.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="habilities-container">
+      <h4 class="center title"><span>Habilidades</span></h4>
+      <div class="container row habilities-content">
+        <div class="col s12 m4 l4 center" *ngFor="let h of habilities">
+            <i class="material-icons icon">{{ h.icon }}</i>
+            <h5>{{ h.title }}</h5>
+            <p>{{ h.habilites }}</p>
+        </div>
+      </div>
+    </div>
+
+</div>

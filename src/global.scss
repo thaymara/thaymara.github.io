@@ -5,3 +5,15 @@ html, body{
     color: #FFFFFF;
     font-weight: 300;
 }
+
+a{
+    color: #212121 !important;
+    border-bottom: 2px solid #a900ff;
+
+    &:hover{
+        background-color: #a900ff;
+        font-weight: 500;
+        letter-spacing: 2px;
+        transition: linear 1s !important;
+    }
+}

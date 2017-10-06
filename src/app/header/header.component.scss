@@ -1,0 +1,63 @@
+.header{
+    min-height: 100vh;
+    background-image: url("http://lorempixel.com/1920/1024/city/9/");
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .header-caption{
+        height: 100vh;
+        width: 100%;
+        left: 0;
+        position: absolute;
+        background: rgba(169, 0, 255, 0.75);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.header-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    .about-picture{
+        margin: 0 auto;
+        padding-top: 45px;
+        width: 250px;
+    
+        img{
+            height: 100%;
+            width: 100%;
+        }
+    }
+    
+    .header-profile{
+        text-align: center;
+    }
+
+    .view-more{
+        bottom: 10px;
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        font-weight: 500;
+        letter-spacing: 3px;
+
+        p{
+            margin: 0;
+        }
+    }
+
+    .chevron-down{
+        transform: rotate(90deg);
+    }
+
+    @media screen and (max-width: 768px){
+        .about-picture{
+            width: 200px;
+        }
+    }
+}
