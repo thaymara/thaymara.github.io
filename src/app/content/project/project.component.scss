@@ -2,12 +2,13 @@
 @import '../../../styles/title.scss';
 
 .project-page{
-    background-color: $light-grey;
+    background-color: #EFEFEF; //$light-grey;
     color: $dark-grey;
     padding-top: 30px;
     
     .project-content{
-        padding-top: 15px;
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 
     .spinner-layer{

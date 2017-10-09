@@ -8,7 +8,7 @@
         font-weight: 400;
     }
 
-    .fa-heart{
+    .heart-icon{
         @include icons($red, 1.1rem);
     }
 }

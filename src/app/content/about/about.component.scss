@@ -12,7 +12,7 @@
         transform: rotate(-347deg);
     }
 
-    .fa-heart{
+    .heart-icon{
         @include icons($red, 1.1rem);
     }
 
@@ -26,7 +26,8 @@
     }
 
     .habilities-content{
-        padding-top: 20px;
+        padding-top: 50px;
+        padding-bottom: 50px;
         margin-bottom: 0 !important;
     }
 
