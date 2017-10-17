@@ -10,7 +10,7 @@ export class AboutService {
       {
         icon: 'code',
         title: "Front-end",
-        habilites: "HTML(5), CSS3, SASS, JavaScript, jQuery, Angular(CLI), Bootstrap, Gulp, Bower"
+        habilites: "HTML5, CSS3, SASS, JavaScript, jQuery, Angular(CLI), Bootstrap, Gulp, Bower"
       },
       {
         icon: 'storage',

@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+
+declare var jQuery: any;
 
 @Component({
   selector: 'app-content',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ContentComponent implements OnInit {
 
+  @Input() hasScrolled: boolean;
+
   constructor() { }
 
   ngOnInit() {
+    jQuery('.parallax').parallax();
   }
 
 }

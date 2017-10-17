@@ -3,7 +3,7 @@
       <span>Meus trabalhos</span>
     </h4>
     <div class="container project-content">
-        <div class="center"  *ngIf="loading">
+        <div class="center" *ngIf="loading">
           <div class="preloader-wrapper active">
               <div class="spinner-layer">
                 <div class="circle-clipper left">
@@ -21,8 +21,8 @@
               *ngFor="let project of projectsList">
               <div class="card medium hoverable">
                 <div class="card-image">
-                  <img class="responsive-img" 
-                    src="../../assets/images/doodle.jpg">
+                  <img class="responsive-img {{ project.language == 'JavaScript' ? 'js-image' : '' }}" 
+                    [src]="getCoverImage(project)">
                   <span class="card-title truncate">{{ project.name }}</span>
                 </div>
                 <div class="card-content">

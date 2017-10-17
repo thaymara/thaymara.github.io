@@ -2,7 +2,7 @@
 @import '../../../styles/title.scss';
 
 .project-page{
-    background-color: #EFEFEF; //$light-grey;
+    background-color: $project-bg;
     color: $dark-grey;
     padding-top: 30px;
     
@@ -17,6 +17,25 @@
 
     .more-button{
         background-color: $main-color !important;
+        margin-top: 20px;
         color: $white !important;
+    }
+
+    .card {
+        background-color: $contact-bg;
+        border: 3px solid $white;
+
+        .card-image {
+            .card-title{
+                color: $dark-grey;
+                text-shadow: 1px 1px $light-grey;
+            }
+
+            img{
+                width: 55%;
+                margin: 0 auto;
+                padding: 10px 0;
+            }
+        }
     }
 }

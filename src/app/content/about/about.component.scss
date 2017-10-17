@@ -23,6 +23,7 @@
     .about-content{
         padding-top: 20px;
         padding-bottom: 20px;
+        height: 350px;
     }
 
     .habilities-content{
@@ -32,6 +33,10 @@
     }
 
     @media screen and (max-width: 768px){
+        .about-content{
+            height: auto;
+        }
+
         .profile-img{
             height: 150px;
         }

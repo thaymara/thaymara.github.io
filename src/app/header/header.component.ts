@@ -13,6 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    jQuery('.parallax').parallax();
   }
 
   goToAbout(){

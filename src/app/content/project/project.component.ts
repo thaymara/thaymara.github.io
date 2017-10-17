@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs/Rx';
 
 import { ProjectService } from './../../services/project.service';
 
@@ -11,13 +12,14 @@ import { ProjectService } from './../../services/project.service';
 export class ProjectComponent implements OnInit {
 
   private projectsList: Array<any> = [];
+  private inscricao: Subscription;
   private loading: boolean = true;
   private error: boolean = false;
 
   constructor(private _projectService: ProjectService) { }
 
   ngOnInit() {
-    this._projectService
+    this.inscricao = this._projectService
       .getRepositories()
       .subscribe(data => {
         this.loading = false;
@@ -28,6 +30,34 @@ export class ProjectComponent implements OnInit {
         this.error = true;
         this.loading = false;
       });
+  }
+
+  ngOnDestroy(){
+    this.inscricao.unsubscribe;
+  }
+
+  getCoverImage(project): string{
+    let image: string;
+
+    switch (project.language) {
+      case "Android":
+        image = "../../assets/images/mobile-app-icon.png";
+        break;
+      
+      case "TypeScript":
+        image = "../../assets/images/angular-icon.png";
+        break;
+      
+      case "JavaScript":
+        image = "../../assets/images/javascript-icon.png";
+        break;
+    
+      default:
+        image = "../../assets/images/coding-html-icon.png";
+        break;
+    }
+
+    return image;
   }
 
 }
