@@ -11,6 +11,7 @@ export class FooterComponent implements OnInit {
 
   public createdYear: string = AppSettings.CREATEDYEAR;
   public currentYear: string;
+  public siteName: string = AppSettings.SITENAME;
 
   constructor() { }
 

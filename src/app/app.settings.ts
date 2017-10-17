@@ -3,5 +3,4 @@ export class AppSettings {
     public static SITENAME = "thaymara.github.io";
     public static USERNAME = "thaymara"
     public static GITURL = `https://api.github.com/users/${AppSettings.USERNAME}/repos?sort=updated`;
-    public static HABILITYURL = `https://api.github.com/repos/${AppSettings.USERNAME}/thaymara.github.io/contents/hability-data.json`
 }

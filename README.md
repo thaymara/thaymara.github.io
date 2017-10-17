@@ -1,10 +1,12 @@
 # thaymara.github.io
 Hi!
-You are welcome to copy or study the code and suggest changes if you see anything in the wrong place or anything that could be improved.
+This is my portfolio version 2.0 that was builded in Angular v4.x with [Angular CLI](https://github.com/angular/angular-cli).
+Fell free to study the code!
 
-This will always be a work in progress.
+## Development server
+Clone this repo, switch to the v.2 branch and run `npm install` to install all the dependencies.
+
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Credits
-* Rating - [angular-input-stars](https://github.com/melloc01/angular-input-stars)
 * CSS - [Materialize](http://materializecss.com/)
-* ScrollSpy - [ng-ScrollSpy.js](http://patrickmarabeas.github.io/ng-ScrollSpy.js/)
