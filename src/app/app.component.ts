@@ -7,7 +7,7 @@ import { DOCUMENT } from '@angular/platform-browser';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  private hasScrolled: boolean = false;
+  public hasScrolled: boolean = false;
 
   constructor(
     @Inject(DOCUMENT) private document: Document

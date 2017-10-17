@@ -9,8 +9,8 @@ import { AppSettings } from '../app.settings';
 })
 export class FooterComponent implements OnInit {
 
-  private createdYear: string = AppSettings.CREATEDYEAR;
-  private currentYear: string;
+  public createdYear: string = AppSettings.CREATEDYEAR;
+  public currentYear: string;
 
   constructor() { }
 

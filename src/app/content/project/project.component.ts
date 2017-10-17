@@ -11,10 +11,10 @@ import { ProjectService } from './../../services/project.service';
 })
 export class ProjectComponent implements OnInit {
 
-  private projectsList: Array<any> = [];
+  public projectsList: Array<any> = [];
   private inscricao: Subscription;
-  private loading: boolean = true;
-  private error: boolean = false;
+  public loading: boolean = true;
+  public error: boolean = false;
 
   constructor(private _projectService: ProjectService) { }
 
