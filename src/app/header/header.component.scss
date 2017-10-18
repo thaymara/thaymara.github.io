@@ -50,9 +50,17 @@
         transform: rotate(90deg);
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 1024px){
         .about-picture{
-            width: 200px;
+            padding-top: 30%;
+            //width: 200px;
+        }
+    }
+
+    @media screen and (max-width: 760px){
+        .about-picture{
+            width: 150px;
+            padding-top: 10px;
         }
     }
 }
