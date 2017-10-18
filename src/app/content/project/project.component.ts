@@ -19,9 +19,9 @@ export class ProjectComponent implements OnInit {
   constructor(private _projectService: ProjectService) { }
 
   ngOnInit() {
-    this.projectsList = [];
-    this.loading = false;
-    /*this.inscricao = this._projectService
+    // this.projectsList = [];
+    // this.loading = false;
+    this.inscricao = this._projectService
       .getRepositories()
       .subscribe(data => {
         this.loading = false;
@@ -31,7 +31,7 @@ export class ProjectComponent implements OnInit {
       error => {
         this.error = true;
         this.loading = false;
-      });*/
+      });
   }
 
   ngOnDestroy(){

@@ -1,5 +1,5 @@
 import { Component, HostListener, Inject } from '@angular/core';
-import {RouterModule, Routes, Router, ActivatedRoute} from '@angular/router';
+import { Router } from '@angular/router';
 import { Subscription } from 'rxjs/Rx';
 import { DOCUMENT } from '@angular/platform-browser';
 
@@ -29,14 +29,20 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    if(this.router.url === "/en"){
-      this.currentLanguage = "en"
-    }else{
-      this.currentLanguage = "pt"
-    }
+    this.inscricao = this.router.events.subscribe(() => {
+      this.checkRouter();
+    });
   }
 
   ngOnDestroy(){
     this.inscricao.unsubscribe;
+  }
+
+  checkRouter(){
+    if(this.router.url == "/en"){
+      this.currentLanguage = "en"
+    }else{
+      this.currentLanguage = "pt"
+    }
   }
 }
