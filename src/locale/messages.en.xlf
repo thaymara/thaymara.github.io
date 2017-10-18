@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="pt" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="5bf91267ed3938de38ce3b62617e887c1f09fa64" datatype="html">
+        <source>Header imagem</source>
+        <target>Header picture</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="a3bbafcb6c71e47ccdb60171859f8d4b8cfe00a5" datatype="html">
+        <source>Doodle imagem</source>
+        <target>Doodle picture</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.ts</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="introductionHeader" datatype="html">
+        <source>Olá! Sou Thaysa Santos</source>
+        <target>Hi! I'm Thaysa Santos</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.ts</context>
+          <context context-type="linenumber">12</context>
+        </context-group>
+        <note priority="1" from="description">An introduction header</note>
+        <note priority="1" from="meaning">site header</note>
+      </trans-unit>
+      <trans-unit id="seeMoreBtn" datatype="html">
+        <source>Veja mais sobre o que eu faço</source>
+        <target>Learn more about what I do</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/header/header.component.ts</context>
+          <context context-type="linenumber">18</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="b13beb8a94dab2495860779d9b35eef17e43625f" datatype="html">
+        <source>Profile imagem</source>
+        <target>Profile picture</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/about/about.component.ts</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutParagraph1" datatype="html">
+        <source>Tudo começou em 2009 quando comecei a brincar com o HTML e CSS de blogs e desde então eu me apaixonei pela área de front-end e procurei me especializar.</source>
+        <target>It all started in 2009 when I started playing with the HTML and CSS of blogs and since then I fell in love with the front end area and tried to specialize.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/about/about.component.ts</context>
+          <context context-type="linenumber">15</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutParagraph2" datatype="html">
+        <source>Hoje sou graduada em Análise e Desenvolvimento de Sistemas e trabalho com aquilo que gosto: desenvolver a interface de websites!</source>
+        <target>I am graduated in Analysis and Systems Development and I work with what I most like: developing the website interface!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/about/about.component.ts</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="aboutParagraph3" datatype="html">
+        <source>Eu amo os animais e amo ler! Adoro estar por dentro das novidades na área e por isso procuro sempre estar participando de eventos.</source>
+        <target>I love to read and animals! I love being inside the news in the area and I always try to participate in events.</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/about/about.component.ts</context>
+          <context context-type="linenumber">17</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="skills" datatype="html">
+        <source>Minhas Habilidades</source>
+        <target>My Expertise</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/about/about.component.ts</context>
+          <context context-type="linenumber">25</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="myWork" datatype="html">
+        <source>Meus trabalhos</source>
+        <target>My Work</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/project/project.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3ee86406a32fc4e52099d79cb269f22d133da087" datatype="html">
+        <source>Imagem</source>
+        <target>Image</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/project/project.component.ts</context>
+          <context context-type="linenumber">24</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="seeMoreProjectBtn" datatype="html">
+        <source>Veja Mais</source>
+        <target>See More</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/project/project.component.ts</context>
+          <context context-type="linenumber">41</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="somethingWrong" datatype="html">
+        <source>Alguma coisa errada aconteceu</source>
+        <target>Something wrong happened</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/project/project.component.ts</context>
+          <context context-type="linenumber">49</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="viewPortfolioLink" datatype="html">
+        <source>Mas você ainda pode visualizar meu portfólio completo pelo</source>
+        <target>But you can still view my complete portfolio on</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/project/project.component.ts</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="contactMe" datatype="html">
+        <source>Contate-me!</source>
+        <target>Contact me!</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/contact/contact.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="sendEmail" datatype="html">
+        <source>Envie seu email para:</source>
+        <target>Send an email to:</target>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/content/contact/contact.component.ts</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

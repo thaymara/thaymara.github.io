@@ -6,14 +6,15 @@
               *ngIf="hasScrolled"
               [@aboutPictureAnimation]=""
               class="responsive-img profile-img" 
-              src="../assets/images/profile.jpg">
+              src="../assets/images/profile.jpg"
+              i18n-title title="Profile imagem">
         </div>
 
         <div class="col s12 m8 l8">
           <div class="description text-flow">
-            <p>Tudo começou em 2009 quando comecei a brincar com o HTML e CSS de blogs e desde então eu me apaixonei pela área de front-end e procurei me especializar.</p>
-            <p>Hoje sou graduada em Análise e Desenvolvimento de Sistemas e trabalho com aquilo que gosto: desenvolver a interface de websites! <i class="material-icons heart-icon">favorite</i></p>
-            <p>Eu amo os animais e amo ler! Adoro estar por dentro das novidades na área e por isso procuro sempre estar participando de eventos.</p>
+            <p i18n="@@aboutParagraph1">Tudo começou em 2009 quando comecei a brincar com o HTML e CSS de blogs e desde então eu me apaixonei pela área de front-end e procurei me especializar.</p>
+            <p><span i18n="@@aboutParagraph2">Hoje sou graduada em Análise e Desenvolvimento de Sistemas e trabalho com aquilo que gosto: desenvolver a interface de websites!</span> <i class="material-icons heart-icon">favorite</i></p>
+            <p i18n="@@aboutParagraph3">Eu amo os animais e amo ler! Adoro estar por dentro das novidades na área e por isso procuro sempre estar participando de eventos.</p>
           </div>
         </div>
       </div>
@@ -21,7 +22,7 @@
 
     <div class="habilities-container">
       <h4 class="center title">
-        <span>Minhas Habilidades</span>
+        <span i18n="@@skills">Minhas Habilidades</span>
       </h4>
       <div class="container row habilities-content" *ngIf="hasScrolled">
         <div class="col s12 m4 l4 center" 

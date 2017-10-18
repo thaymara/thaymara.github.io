@@ -3,6 +3,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpModule } from "@angular/http";
 import { MaterializeModule } from 'angular2-materialize';
 import { NgModule } from '@angular/core';
+import { Routing } from "./app.routes";
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
@@ -28,7 +29,8 @@ import { ContentComponent } from './content/content.component';
     BrowserModule,
     BrowserAnimationsModule,
     HttpModule,
-    MaterializeModule
+    MaterializeModule,
+    Routing
   ],
   providers: [],
   bootstrap: [AppComponent]

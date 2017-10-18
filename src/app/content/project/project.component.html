@@ -1,6 +1,6 @@
 <section class="project-page" id="project">
     <h4 class="center title">
-      <span>Meus trabalhos</span>
+      <span i18n="@@myWork">Meus trabalhos</span>
     </h4>
     <div class="container project-content">
         <div class="center" *ngIf="loading">
@@ -21,8 +21,7 @@
               *ngFor="let project of projectsList">
               <div class="card medium hoverable">
                 <div class="card-image">
-                  <img class="responsive-img {{ project.language == 'JavaScript' ? 'js-image' : '' }}" 
-                    [src]="getCoverImage(project)">
+                  <img [src]="getCoverImage(project)" i18n-title title="Imagem">
                   <span class="card-title truncate">{{ project.name }}</span>
                 </div>
                 <div class="card-content">
@@ -37,18 +36,19 @@
               </div>
           </div>
           <div class="center">
-              <a 
+              <a
                 href="https://github.com/thaymara?tab=repositories" target="_blank"
                 class="waves-effect waves-light btn more-button">
-                <i class="material-icons right">arrow_forward</i>Veja Mais
+                <i class="material-icons right">arrow_forward</i>
+                <span i18n="@@seeMoreProjectBtn">Veja Mais</span>
               </a>
           </div>
       </div>
 
       <div class="error" *ngIf="error && !loading">
         <h1>Oops! <i class="material-icons medium">sentiment_very_dissatisfied</i></h1>
-        <p>Alguma coisa errada aconteceu</p>
-        <p>Mas você ainda pode visualizar meu portfólio completo pelo <a href="https://github.com/thaymara" target="_blank">github</a>!</p>
+        <p i18n="@@somethingWrong">Alguma coisa errada aconteceu</p>
+        <p><span i18n="@@viewPortfolioLink">Mas você ainda pode visualizar meu portfólio completo pelo</span> <a href="https://github.com/thaymara" target="_blank">github</a>!</p>
       </div>
 
   </div>
