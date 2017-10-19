@@ -22,10 +22,11 @@
               <div class="card medium hoverable">
                 <div class="card-image">
                   <img [src]="getCoverImage(project)" i18n-title title="Imagem">
-                  <span class="card-title truncate">{{ project.name }}</span>
+                  <!-- <span class="card-title truncate">{{ project.name }}</span> -->
                 </div>
                 <div class="card-content">
-                  <p>{{ project.description }}</p>
+                  <span class="card-title">{{ project.name }}</span>
+                  <!-- <p>{{ project.description }}</p> -->
                 </div>
                 <div class="card-action">
                     <a href="{{ project.html_url }}" target="_blank">

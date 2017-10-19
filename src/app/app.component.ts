@@ -39,7 +39,7 @@ export class AppComponent {
   }
 
   checkRouter(){
-    if(this.router.url == "/en"){
+    if(this.router.url.indexOf("/en") > -1){
       this.currentLanguage = "en"
     }else{
       this.currentLanguage = "pt"

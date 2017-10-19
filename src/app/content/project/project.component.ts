@@ -40,20 +40,33 @@ export class ProjectComponent implements OnInit {
 
   getCoverImage(project): string{
     let image: string;
-
-    switch (project.language) {
-      case "Android":
+    let language: string = project.name.split("-");
+    //console.log(language);
+    switch (language[0]) {
+      case "android":
         image = "../../assets/images/mobile-app-icon.png";
         break;
       
-      case "TypeScript":
+      case "angular":
+        image = "../../assets/images/angular-icon.png";
+        break;
+
+      case "angularjs":
         image = "../../assets/images/angular-icon.png";
         break;
       
-      case "JavaScript":
+      case "javascript":
         image = "../../assets/images/javascript-icon.png";
         break;
-    
+
+      case "ionic":
+        image = "../../assets/images/ionic-icon.png";
+        break;
+
+      case "react":
+        image = "../../assets/images/react-icon.png";
+        break;
+
       default:
         image = "../../assets/images/coding-html-icon.png";
         break;
