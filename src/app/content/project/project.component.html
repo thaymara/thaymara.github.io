@@ -1,7 +1,7 @@
 <section class="project-page" id="project">
-    <h4 class="center title">
+    <h1 class="center title">
       <span i18n="@@myWork">Meus trabalhos</span>
-    </h4>
+    </h1>
     <div class="container project-content">
         <div class="center" *ngIf="loading">
           <div class="preloader-wrapper active">
@@ -21,7 +21,9 @@
               *ngFor="let project of projectsList">
               <div class="card medium hoverable">
                 <div class="card-image">
-                  <img [src]="getCoverImage(project)" i18n-title title="Imagem">
+                  <img [src]="getCoverImage(project)" 
+                    i18n-title title="Imagem" 
+                    alt="projeto imagem" />
                   <!-- <span class="card-title truncate">{{ project.name }}</span> -->
                 </div>
                 <div class="card-content">

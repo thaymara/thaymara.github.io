@@ -1,15 +1,24 @@
 <section class="about-page" id="about">
   <div class="container">
       <div class="row about-content">
-        <div class="col s12 m4 l4 center" >
+        <div class="col s12 m4 l4 center" *ngIf="!ieBrowser;else about_ie_content">
             <img 
               *ngIf="hasScrolled"
               [@aboutPictureAnimation]=""
               class="responsive-img profile-img" 
               src="../assets/images/profile.jpg"
-              i18n-title title="Profile imagem">
+              i18n-title title="Profile imagem" 
+              alt="Profile imagem" />
         </div>
-
+        <ng-template #about_ie_content>
+          <div class="col s12 m4 l4 center">
+            <img 
+              class="responsive-img profile-img" 
+              src="../assets/images/profile.jpg"
+              i18n-title title="Profile imagem"
+              alt="Profile imagem" />
+          </div>
+        </ng-template>
         <div class="col s12 m8 l8">
           <div class="description text-flow">
             <p i18n="@@aboutParagraph1">Tudo começou em 2009 quando comecei a brincar com o HTML e CSS de blogs e desde então eu me apaixonei pela área de front-end e procurei me especializar.</p>
@@ -21,9 +30,10 @@
     </div>
 
     <div class="habilities-container">
-      <h4 class="center title">
+      <h1 class="center title">
         <span i18n="@@skills">Minhas Habilidades</span>
-      </h4>
+      </h1>
+      <div *ngIf="!ieBrowser;else habilities_ie_content">
       <div class="container row habilities-content" *ngIf="hasScrolled">
         <div class="col s12 m4 l4 center" 
           *ngFor="let h of habilities"
@@ -33,6 +43,17 @@
             <p>{{ h.habilites }}</p>
         </div>
       </div>
+      </div>
+      <ng-template #habilities_ie_content>
+        <div class="container row habilities-content">
+          <div class="col s12 m4 l4 center" 
+            *ngFor="let h of habilities">
+              <i class="material-icons icon">{{ h.icon }}</i>
+              <h5>{{ h.title }}</h5>
+              <p>{{ h.habilites }}</p>
+          </div>
+        </div>
+      </ng-template>
     </div>
 
   </section>
