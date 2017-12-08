@@ -50,7 +50,6 @@ export class AboutComponent implements OnInit {
     this.ieBrowser = window.navigator.userAgent.indexOf("Trident") > -1 || window.navigator.userAgent.indexOf("MSIE") > -1;
     this.inscricao = this._aboutService.getHabilities()
       .subscribe(data => {
-        console.log(data);
         this.habilities = data.data;
     });
   }

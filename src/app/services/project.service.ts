@@ -18,7 +18,7 @@ export class ProjectService {
     private extractData(res: Response) {
         if (res.status == 200) {
             let body = res.json(); // parse into a JavaScript object
-            return body.data;
+            return body;
         }
         else {
             console.error('ERROR: Could not retrieve data; Status = ' + res.status);
