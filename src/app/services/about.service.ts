@@ -1,27 +1,32 @@
 import { Injectable } from '@angular/core';
 
+import { Http, Response } from '@angular/http';
+import { Observable } from 'rxjs/Observable';
+
 @Injectable()
 export class AboutService {
 
-  constructor() { }
+  constructor(private http: Http) { }
 
-  getHabilities(): Array<any>{
-    return [
-      {
-        icon: 'code',
-        title: "Front-end",
-        habilites: "HTML5, CSS3, SASS, JavaScript, jQuery, Angular(CLI), Bootstrap, Gulp, Bower"
-      },
-      {
-        icon: 'storage',
-        title: "Back-end",
-        habilites: "NodeJs, Java"
-      },
-      {
-        icon: 'phone_android',
-        title: "Mobile",
-        habilites: "Ionic, Android"
-      }
-    ]
+  getHabilities(): Observable<any>{
+    return this.http.get("../assets/data/skills.json")
+      .map(this.extractData).catch(this.handleError);
+  }
+
+  private extractData(res: Response) {
+    if (res.status == 200) {
+        let body = res.json(); // parse into a JavaScript object
+        return body;
+    }
+    else {
+        console.error('ERROR: Could not retrieve data; Status = ' + res.status);
+        return "";
+    }
+  }
+
+  private handleError(error: any) {
+    let errMsg = (error.message) ? error.message : error.status ? `${ error.status } - ${ error.statusText}` : 'Box token: Server error';
+    console.error(errMsg);
+    return Observable.throw(errMsg);
   }
 }

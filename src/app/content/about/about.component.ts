@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-
+import { Subscription } from 'rxjs/Rx';
 import { AboutService } from './../../services/about.service';
 
 @Component({
@@ -39,13 +39,24 @@ export class AboutComponent implements OnInit {
   @Input() hasScrolled: boolean;
 
   private habilities: Array<any> = [];
+  public ieBrowser: boolean = false;
+  private inscricao: Subscription;
 
   constructor(
     private _aboutService: AboutService
   ) { }
 
   ngOnInit() {
-    this.habilities = this._aboutService.getHabilities();
+    this.ieBrowser = window.navigator.userAgent.indexOf("Trident") > -1 || window.navigator.userAgent.indexOf("MSIE") > -1;
+    this.inscricao = this._aboutService.getHabilities()
+      .subscribe(data => {
+        console.log(data);
+        this.habilities = data.data;
+    });
+  }
+
+  ngOnDestroy(){
+    this.inscricao.unsubscribe;
   }
 
 }
