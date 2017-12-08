@@ -16,11 +16,7 @@ export class AppComponent {
   constructor(
     private router: Router,
     @Inject(DOCUMENT) private document: Document
-  ){
-    this.inscricao = this.router.events.subscribe(() => {
-      this.checkRouter();
-    });
-  }
+  ){}
 
   @HostListener("window:scroll", [])
   onWindowScroll() {
@@ -33,7 +29,9 @@ export class AppComponent {
   }
 
   ngOnInit(){
-    
+    this.inscricao = this.router.events.subscribe(() => {
+      this.checkRouter();
+    });
   }
 
   ngOnDestroy(){
@@ -41,7 +39,6 @@ export class AppComponent {
   }
 
   checkRouter(){
-    console.log(this.router.url);
     if(this.router.url.indexOf("/en") > -1){
       this.currentLanguage = "en";
     }else{
