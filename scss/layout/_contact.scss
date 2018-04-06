@@ -1,0 +1,22 @@
+.contact {
+  padding-top: 30px;
+  background-color: color(background-colors, _contact-bg);
+
+  .contact__social {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    font-size: 1.5rem;
+
+    a {
+      margin-right: 10px;
+      margin-left: 10px;
+      border-bottom: none;
+
+      &:hover {
+        letter-spacing: normal;
+        color: color(base-colors, _primary);
+        background-color: transparent;
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "data":[
+      {
+        "icon": "code",
+        "title": "Front-end",
+        "habilites": "HTML5, CSS3, SASS, JavaScript, jQuery, Angular(CLI), Bootstrap, Gulp, Drupal"
+      },
+      {
+        "icon": "storage",
+        "title": "Back-end",
+        "habilites": "NodeJs, Java"
+      },
+      {
+        "icon": "phone_android",
+        "title": "Mobile",
+        "habilites": "Ionic, Android"
+      }
+  ]
+}

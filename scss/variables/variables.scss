@@ -1,0 +1,24 @@
+$colors: (
+  base-colors: (
+    _primary: #a900ff,
+    _dark-blue: #4377a2,
+    _light-blue: #5493c9,
+    _dark-grey: #212121,
+    _light-grey: #e6ebeb,
+    _white: #fff,
+    _red: #f00,
+  ),
+
+  background-colors: (
+    _project-bg: #efefef,
+    _contact-bg: #f7f7f7,
+  ),
+
+  rgba: (
+    _primary: rgba(169, 0, 255, .55),
+  )
+);
+
+@function color($color-name, $color-variant) {
+  @return map-get(map-get($colors, $color-name), $color-variant);
+}

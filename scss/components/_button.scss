@@ -1,0 +1,40 @@
+.button--more {
+  margin-top: 20px;
+  color: color(base-colors, _white);
+  background-color: color(base-colors, _primary);
+
+  &:hover {
+    background-color: color(base-colors, _primary);
+  }
+}
+
+.button--view-more {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  font-weight: 500;
+  letter-spacing: 3px;
+  text-align: center;
+  cursor: pointer;
+
+  p {
+    margin: 0;
+  }
+}
+
+.button__float {
+  background-color: color(base-colors, _dark-blue);
+
+  &:hover {
+    background-color: color(base-colors, _light-blue);
+  }
+}
+
+.button__float--select {
+  background-color: color(base-colors, _dark-blue);
+  border-bottom: none;
+
+  &:hover {
+    background-color: color(base-colors, _light-blue);
+  }
+}
