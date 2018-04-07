@@ -1,8 +1,8 @@
 # thaymara.github.io
 Hi!
-You are welcome to copy or study the code and suggest changes if you see anything in the wrong place or anything that could be improved.
+This is my personal portfolio, you are very welcome to copy or study the code and suggest changes if you see anything in the wrong place or anything that could be improved.
 
-Currently my portfolio is on version 2.0 that was builded in Angular v4.x with [Angular CLI](https://github.com/angular/angular-cli)
+Currently this site is on version 3.0 that was builded with vanilla JS, SASS and gulp to minify and validate scss and js files.
 
 ## Credits
-* CSS - [Materialize](http://materializecss.com/)
+* CSS base - [Materialize](http://materializecss.com/)

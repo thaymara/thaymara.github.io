@@ -1,0 +1,19 @@
+html,
+body {
+  font-weight: 300;
+  color: color(base-colors, _dark-grey);
+}
+
+a {
+  color: color(base-colors, _dark-grey);
+  border-bottom: 2px solid color(base-colors, _primary);
+  transition: linear .7s;
+
+  &:hover {
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: color(base-colors, _white);
+    background-color: color(base-colors, _primary);
+    transition: linear .7s;
+  }
+}
