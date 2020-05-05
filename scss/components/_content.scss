@@ -1,9 +1,0 @@
-.content {
-  height: auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
-
-  @include breakpoint(sm) {
-    height: 350px;
-  }
-}
