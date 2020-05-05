@@ -5,4 +5,4 @@ This is my personal portfolio, you are very welcome to copy or study the code an
 Currently this portfolio is on version 4.0 that was builded from a portfolio base created by Sivanesh and customized by me.
 
 ## Credits
-* Portfolio Minimal - [Sivanesh](https://github.com/Sivanesh-S/portfolio-minimal)
+* Portfolio Minimal by [Sivanesh](https://github.com/Sivanesh-S/portfolio-minimal)
