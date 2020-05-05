@@ -2,8 +2,6 @@ const getDOM = selector => () => {
   return document.querySelector(selector);
 };
 
-document.title = `${main.name} | ${main.role}`
-
 // Values DOM nodes
 const dom = {
   main: {
@@ -39,7 +37,7 @@ function assignDOM(dom, value, options) {
 
 assignDOM(dom.main.name(), main.name);
 assignDOM(dom.main.mail(), main.mail);
-dom.main.mail().href = `mailto:${main.mail}?Subject=Hello%20again`;
+dom.main.mail().href = `mailto:${main.mail}?Subject=Hello`;
 assignDOM(dom.main.img(), main.img, { isImg: true });
 assignDOM(dom.main.role(), main.role);
 // assignDOM(dom.main.links(), main.links)
