@@ -6,14 +6,14 @@ const main = {
   // Refer https://ionicons.com/ and put the icon name inside iconName key
   connects: [
     {
-      name: 'Github',
-      iconName: 'logo-github',
-      link: 'https://github.com/thaymara'
-    },
-    {
       name: 'Linkedin',
       iconName: 'logo-linkedin',
       link: 'https://www.linkedin.com/in/thaysa-mara-santos/'
+    },
+    {
+      name: 'Github',
+      iconName: 'logo-github',
+      link: 'https://github.com/thaymara'
     },
     {
       name: 'Twitter',
@@ -27,7 +27,7 @@ const main = {
     }
   ],
   links: [
-    { name: 'Projects', link: '#projects' },
-    { name: 'Blogs', link: '#blogs' }
+    { name: 'Behance', link: 'https://www.behance.net/thaysamara' },
+    { name: 'UX Studies Cases', link: 'https://medium.com/@thaysasantos' }
   ]
 };
