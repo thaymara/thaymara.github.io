@@ -2,7 +2,7 @@ const main = {
   name: 'Thaysa Santos',
   mail: 'thaysamarasantos@gmail.com',
   img: './profile-pic.png',
-  role: ['UX Designer | Front-end Developer'],
+  role: ['UX Designer enthusiastic | Front-end Developer'],
   // Refer https://ionicons.com/ and put the icon name inside iconName key
   connects: [
     {
