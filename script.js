@@ -54,8 +54,8 @@ assignDOM(dom.main.connects(), connectsDOM);
 // Internal Links
 const getLinks = links =>
   links
-    .map(({ name, link }) => `<a href="${link}" class="text-pink-500" >${name}</a>`)
-    .map((link, index, links) => index === links.length - 1 ? link: `${link} - `)
+    .map(({ name, link }) => `<a href="${link}" class="text-pink-500" target="_blank">${name}</a>`)
+    .map((link, index, links) => index === links.length - 1 ? link: `${link} &bull; `)
     .join('\n');
 assignDOM(dom.main.links(), getLinks(main.links));
 
