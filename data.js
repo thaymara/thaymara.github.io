@@ -11,11 +11,6 @@ const main = {
       link: 'https://www.linkedin.com/in/thaysa-mara-santos/'
     },
     {
-      name: 'Github',
-      iconName: 'logo-github',
-      link: 'https://github.com/thaymara'
-    },
-    {
       name: 'Twitter',
       iconName: 'logo-twitter',
       link: 'https://twitter.com/hey_thaysa'
